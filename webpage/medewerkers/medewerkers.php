@@ -7,6 +7,9 @@
     <title>Medewerkers</title>
 </head>
 <body>
+    <?php include "menu.html" ?>
+
+    
     <section class="medewerker-info">
         <h2>Gian Carlo Jansen</h2>
         <p>
