@@ -14,7 +14,7 @@
     <section class="medewerker-info">
         <h2>Gian Carlo Jansen</h2>
         <p>
-            Onze eerste wedewerker is Gian Carlo Jansen. Hij luistert goed naar de problemen van klanten en is ook nog eens een fijne collega om mee te werken.
+            Onze eerste medewerker is Gian Carlo Jansen. Hij luistert goed naar de problemen van klanten en is ook nog eens een fijne collega om mee te werken.
             Hij heeft veel kennis en weet altijd wat hij moet doen. Oplossingen zoeken voor problemen is een van zijn sterke punten. 
         </p>
     </section>
