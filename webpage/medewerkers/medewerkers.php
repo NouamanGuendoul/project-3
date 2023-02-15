@@ -23,7 +23,7 @@
         <h2>Gregor Ostrowski</h2>
         <p>
             Gregor is zeer sociaal en is daarom fijn om mee te praten als klant. Hij zoekt snel naar oplossingen voor problemen en is goed in onderhandelen. Hij geeft ons veel ideeën en werkt snel.
-            Het is fijn om hem in ons team te hebben en hij zorgt er ook voor dat ons bedrijf een efficiënte werkwijze heeft.
+            Het is fijn om hem in ons team te hebben en hij zorgt er ook voor dat ons bedrijf een efficiënte werkwijze heeft. Hij begrijpt klanten snel.
         </p>
     </section>
 
