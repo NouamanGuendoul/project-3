@@ -1,0 +1,40 @@
+body{
+    background-color: #ffffff;
+}
+
+#medewerker-gian{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: blue 5px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffced7;
+}
+#medewerker-gregor{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: blue 5px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: #7ce6b6;
+}
+#medewerker-nouaman{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: blue 5px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: #90ccfe;
+}
+#medewerker-stacey{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border: blue 5px solid;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff162;
+}
