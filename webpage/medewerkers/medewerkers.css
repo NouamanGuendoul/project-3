@@ -38,3 +38,11 @@ body{
     padding: 20px;
     background-color: #fff162;
 }
+#overons-1{
+    display: flex;
+    justify-content: center;
+}
+#overons-2{
+    display: flex;
+    justify-content: center;
+}
