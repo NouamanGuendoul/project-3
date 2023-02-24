@@ -1,5 +1,23 @@
+#klacht-container{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0000a4;
+    margin: 30px;
+}
+#klacht-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d4bbef;
+    width: 30vw;
+    height: 60vh;
+    text-align: center;
+}
 #naam-input{
-    
+    margin-bottom: 40px;
 }
 #klacht-input{
 
