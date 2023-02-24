@@ -1,3 +1,5 @@
+<?php include '../navbar/menu.html';?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,12 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medewerkers</title>
-    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="../navbar/menu.css">
     <link rel="stylesheet" href="./medewerkers.css">
 </head>
 <body>
 
-    <?php include '../menu.html';?>
  <main id="medewerkers-main">
     <div id="overons-1">
             <section id="medewerker-gian">
