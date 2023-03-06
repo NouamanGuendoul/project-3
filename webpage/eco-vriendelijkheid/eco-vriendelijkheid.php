@@ -1,4 +1,4 @@
-<?php include './navbar/menu.html' ?>
+<?php include '../navbar/menu.html' ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eco-vriendelijkheid</title>
-    <link rel="stylesheet" href="./navbar/menu.css">
+    <link rel="stylesheet" href="../navbar/menu.css">
 
 </head>
 <body>
