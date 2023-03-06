@@ -13,7 +13,7 @@
     <!-- navbar -->
     <nav> 
         <ul id="nav-list">
-            <li id="logo-li"><a href="../home.php"><img src="./img/dol.com-logo.png" alt="logo"  id="logo-img"></a></li>
+            <li id="logo-li"><a href="./home.php"><img src="./img/dol.com-logo.png" alt="logo"  id="logo-img"></a></li>
             <li class="nav-li"><a href="./medewerkers/medewerkers.php">Over Ons</a></li>
             <li class="nav-li"><a href="#">----</a></li>
             <li class="nav-li"><a href="#">----</a></li>
