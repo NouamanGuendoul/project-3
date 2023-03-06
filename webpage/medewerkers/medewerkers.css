@@ -24,7 +24,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 30vw;
-    border: #6a98bd 5px solid;
+    border: #6b99bf 5px solid;
     margin: 10px;
     padding: 20px;
     background-color: #90ccfe;
@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 30vw;
-    border: blue 5px solid;
+    border: #bab146 5px solid;
     margin: 10px;
     padding: 20px;
     background-color: #fff162;
