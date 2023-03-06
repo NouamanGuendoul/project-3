@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: #434339;
+}
+
+.comnouaman{
+      display: flex;
+      justify-content: center;
+}
+
+.dolnouaman{
+    display: flex;
+    justify-content: center;
+}
+
+.gesnouaman{
+    width: 500px;
+    border: 100px;
+    border-radius: 5px;
+    background-color: #FF0000;
+}
+
+.Geschiedenisnouaman{ 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 50vh;
+}

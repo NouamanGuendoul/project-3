@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medewerkers</title>
     <link rel="stylesheet" href="../navbar/menu.css">
-    <link rel="stylesheet" href="./medewerkers.css">
+    <link rel="stylesheet" href="./medewerkers.css?v=<?php echo time(); ?>">
 </head>
 <body>
 

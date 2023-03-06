@@ -1,3 +1,5 @@
+<?php include './navbar/menu.html' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eco-vriendelijkheid</title>
+    <link rel="stylesheet" href="./navbar/menu.css">
+
 </head>
 <body>
-    <?php include 'menu.html' ?>
-
-
     <section>
     <h2> Eco Vriendelijkheid</h2>
     <p> Om ervoor te zorgen dat wij eco-vriendelijk zijn zorgen wij ervoor <br> dat wij geen factuur meesturen met de 
