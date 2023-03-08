@@ -19,6 +19,26 @@
 #naam-input{
     margin-bottom: 40px;
 }
-#klacht-input{
+
+/* retour style */
+#retour-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 45vw;
+    height: 60vh;
+}
+
+#retour-h2{
+
+}
+
+#retour-h3{
+
+}
+
+#retour-p{
 
 }

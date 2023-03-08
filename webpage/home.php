@@ -1,4 +1,4 @@
-<!-- <?php include './navbar/menu.html';?> -->
+<?php include('./navbar/menu.html');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav> 
+    <!-- <nav> 
         <ul id="nav-list">
             <li id="logo-li"><a href="./home.php"><img src="./img/dol.com-logo.png" alt="logo"  id="logo-img"></a></li>
             <li class="nav-li"><a href="./medewerkers/medewerkers.php">Over Ons</a></li>
@@ -20,7 +20,7 @@
             <li class="nav-li"><a href="./klachten/klachten.php">Klachten</a></li>
         </ul>
       
-    </nav>
+    </nav> -->
  
 </body>
 </html>

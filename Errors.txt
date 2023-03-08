@@ -3,9 +3,7 @@ txt file made by Stacey Peters. Do not change.
 
 
 
-When opening webpage map in apache local host, it does not load the home page, going to the home page by clicking on the logo(with link to homepage) gives an error "The requested URL was not found on this server.".
-
-When on any page, going to the exact same page by clicking on the navbar name gives an error "The requested URL was not found on this server.".
+When opening webpage map in apache local host, it does not load the home page.
 
 When clicking on "verzenden" (klachten.php), it gives an error "The requested URL was not found on this server.".
 
