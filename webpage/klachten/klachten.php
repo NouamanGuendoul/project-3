@@ -19,7 +19,7 @@
             $datum = Date('d-m-Y');
             $stmt->execute();
 
-        header('Location: index.php');
+        header('Location: klachten.php');
 
         }}
 
