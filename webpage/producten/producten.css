@@ -1,0 +1,14 @@
+.product1{
+    width: 200px;
+    position: absolute;
+    color: aqua;
+    background-color: green;
+}
+.product2{
+    width: 200px;
+    position: relative;
+
+    left: 400px;
+    color: aqua;
+    background-color: blue;
+}
