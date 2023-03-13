@@ -37,3 +37,18 @@ nav{
 
     /* border-bottom: 10px rgb(15, 15, 167) solid; */
 }
+
+/* footer*/
+
+#footerbalk{
+    background-color: #0000a4;
+    height: 8vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+   }
