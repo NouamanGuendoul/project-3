@@ -1,10 +1,19 @@
+#klachten-retour{
+    min-height:100%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 #klacht-container{
     /* background-color: brown; */
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0000a4;
-    margin: 30px;
+    margin: 8vh;
+
 }
 #klacht-form{
     display: flex;
@@ -14,7 +23,7 @@
     background-color: #d4bbef;
     width: 30vw;
     height: 60vh;
-    text-align: center;
+    border: #ae99c5 5px solid;
 }
 #naam-input{
     margin-bottom: 40px;
@@ -29,8 +38,7 @@
     background-color: #ffb075;
     width: 45vw;
     height: 60vh;
-    margin-left: 26.2vw;
-    padding: 10px;
-    margin-bottom: 10vh
+    padding: 5vh 5vw;
+    margin-bottom: 15vh;
+    border: #bb7f51 5px solid;
 }
-
