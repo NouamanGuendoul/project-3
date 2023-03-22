@@ -10,37 +10,10 @@
             <li class="nav-li"><a href="./geschiedenis/geschiedenis.php">Geschiedenis</a></li>
             <li class="nav-li"><a href="./eco-vriendelijkheid/eco-vriendelijkheid.php">Eco</a></li>
             <li class="nav-li"><a href="./klachten/klachten.php">Klachten</a></li>
+            <li class="nav-li"><a href="./inlog/login.php">Log In</a></li>
         </ul>
-      
     </nav>
 
     <footer id="footerbalk">Footer Container</footer>
 
 </body>
-
-<?php
-try {
-
-
-  $db = new PDO("mysql:host=localhost;dbname=klanten", "root", "");
-  $query = $db->prepare("SELECT * FROM klant");
-  $query->execute();
-  $result = $query->fetchAll(PDO::FETCH_ASSOC);
-  
-  
-  
-}  catch(PDOException $e)  {
-  //die("Error!: " . $e->message());
-}
-
-
-?>
-
-<form action="gebruiker.php" method="POST">
-  <label for="fname">naam:</label>
-  <input type="text" id="Naam" name="Naam" ><br><br>
-  <label for="lname">wachtwoord:</label>
-  <input type="text" id="Wachtwoord" name="Wachtwoord"><br><br>
-
-  <input type="submit" value="verzenden">
-</form>
