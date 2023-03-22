@@ -5,7 +5,7 @@
 <?php
     include "../navbar/menu.html";
     include "./connectpdo.php";
-
+    
     try{
         $stmt = $conn->prepare("INSERT INTO klachten (naam, bericht, datum)
         VALUES (:naam, :klacht, :datum)");
@@ -38,6 +38,7 @@
 
 <!-- Klachten Form -->
 <div id="klachten-retour">
+    
     <div id="klacht-container">
     <form method="post" action="" id="klacht-form">
         Naam: <br><input type="text" name="naam" id="naam-input" required></input><br><br>
@@ -45,6 +46,8 @@
         <input type="submit" name="btn" id="btn">
     </form>
     </div>
+
+
     <!-- Retourtermijn -->
     <section id="retour-container">
         <h2 id="retour-h2">Retourtermijn</h2><br>
