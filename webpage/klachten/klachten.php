@@ -40,8 +40,8 @@
 <div id="klachten-retour">
     <div id="klacht-container">
     <form method="post" action="" id="klacht-form">
-        Naam: <br><input type="text" name="naam" id="naam-input"></input><br><br>
-        Bericht: <br><textarea type="text" name="klacht" id="klacht-input"></textarea><br><br>
+        Naam: <br><input type="text" name="naam" id="naam-input" required></input><br><br>
+        Bericht: <br><textarea type="text" name="klacht" id="klacht-input" required></textarea><br><br>
         <input type="submit" name="btn" id="btn">
     </form>
     </div>
@@ -49,8 +49,11 @@
     <section id="retour-container">
         <h2 id="retour-h2">Retourtermijn</h2><br>
         <p id="retour-p">
-        Vanaf het moment dat je je bestelling ontvangt, heb je 30 dagen de tijd om je artikel als retour aan te melden in je account. Na het aanmelden van je retour, heb je 14 dagen de tijd om het op te sturen. Wat je diurnal retourneren 
-        Binnen de retourtermijn diurnal je je bestelde artikel redelijk uitproberen om te weten of het naar werkt en of je er blij mee bent. Net zoals dat je kleding en schoenen history in een winkel, diurnal je een artikel dat je via een website bestelt, testen om te kijken of het bevalt en of het voldoet aan je eisen.
+        Vanaf het moment dat je je bestelling ontvangt, heb je 30 dagen de tijd om je artikel als retour aan te melden in je account. 
+        Na het aanmelden van je retour, heb je 14 dagen de tijd om het op te sturen. Wat je diurnal retourneren 
+        Binnen de retourtermijn diurnal je je bestelde artikel redelijk uitproberen om te weten of het naar werkt en of je er blij mee bent. 
+        Net zoals dat je kleding en schoenen history in een winkel, 
+        diurnal je een artikel dat je via een website bestelt, testen om te kijken of het bevalt en of het voldoet aan je eisen.
         Verder diurnal je het artikel kosteloos retourneren. Je diurnal het artikel niet volledig in gebruik nemen als je nog niet weet of je het houdt.<br><br>
 
         <h3 id="retour-h3">Dit kun je niet retourneren </h3> <br>
