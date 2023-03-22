@@ -1,15 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-</head>
-<body>
+<link rel="stylesheet" href="./navbar/menu.css?v=<?php echo time(); ?>">
 
-<?php include 'menu.php';
+<body>
+    
+    <nav> 
+        <ul id="nav-list">
+            <li id="logo-li"><a href="./home.php"><img src="./img/dol.com-logo.png" alt="logo"  id="logo-img"></a></li>
+            <li class="nav-li"><a href="./producten/producten.php">Producten</a></li>
+            <li class="nav-li"><a href="./medewerkers/medewerkers.php">Over Ons</a></li>
+            <li class="nav-li"><a href="./geschiedenis/geschiedenis.php">Geschiedenis</a></li>
+            <li class="nav-li"><a href="./eco-vriendelijkheid/eco-vriendelijkheid.php">Eco</a></li>
+            <li class="nav-li"><a href="./klachten/klachten.php">Klachten</a></li>
+        </ul>
+      
+    </nav>
+
+    <footer id="footerbalk">Footer Container</footer>
+
+</body>
+
+<?php
 try {
 
 
@@ -26,6 +35,7 @@ try {
 
 
 ?>
+
 <form action="gebruiker.php" method="POST">
   <label for="fname">naam:</label>
   <input type="text" id="Naam" name="Naam" ><br><br>
@@ -34,9 +44,3 @@ try {
 
   <input type="submit" value="verzenden">
 </form>
-
-
-
- 
-</body>
-</html>
