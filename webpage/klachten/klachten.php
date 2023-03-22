@@ -21,6 +21,7 @@
             $stmt->execute();
 
         header('Location: klachten.php');
+        
 
         }}
 
@@ -41,7 +42,7 @@
     <form method="post" action="" id="klacht-form">
         Naam: <br><input type="text" name="naam" id="naam-input"></input><br><br>
         Bericht: <br><textarea type="text" name="klacht" id="klacht-input"></textarea><br><br>
-        <input type="submit" name="knop" id="knop">
+        <input type="submit" name="btn" id="btn">
     </form>
     </div>
     <!-- Retourtermijn -->
