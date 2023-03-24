@@ -1,11 +1,3 @@
-*{
-    margin:0;
-    padding: 0;
-}
-body{
-    background-color: #434339;
-}
-
 .comnouaman{
       display: flex;
       justify-content: center;
@@ -18,14 +10,16 @@ body{
 
 .gesnouaman{
     width: 500px;
-    border: 100px;
-    border-radius: 5px;
-    background-color: #FF0000;
+    padding: 4.5vh 2vw;
+    border: #6b99bf 5px solid;
+    background-color: #90ccfe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.Geschiedenisnouaman{ 
+.Geschiedenisnouaman{
     display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 50vh;
+    justify-content: center;
 }

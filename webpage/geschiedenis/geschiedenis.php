@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="./geschiedenis.css?v=<?php echo time(); ?>">
 </head>
 <body>
-<h1 class="dolnouaman" >Geschiedenis van Dol.com </h1>
-
-
-<div class="Geschiedenisnouaman">
-<section class="gesnouaman" > 
-    <h2 class="comnouaman">Dol.com</h2>
-    <p>Het bedrijf is opgericht in 1980 door de oprichter Yassin rahmoeni. <br>
-       Hij begon met een fietsen winkel daar ging hij kinderen helpen met <br>
-       hun lekken banden. Daarna ging hij 2 soorten winkels samenvoegen een fietsenwinkel en een supermarkt  <br> 
-       Daar had hij meer connecties met bedrijfsleden gekregen , zelfs met de eigenaar met bol.com. <br>
-       Ze waren goeie vrienden geworden en de eigenaar van bol.com was een inspiratie van Yassin geworden. <br>
     
-</p>
-</section>
-</div>
+    <div class="Geschiedenisnouaman">
+        <section class="gesnouaman" > 
+
+            <h2 class="comnouaman">Dol.com</h2>
+
+            <p>
+                Het bedrijf is opgericht in 1980 door de oprichter Yassin rahmoeni.
+                Hij begon met een fietsen winkel daar ging hij kinderen helpen met
+                hun lekken banden. Daarna ging hij 2 soorten winkels samenvoegen een fietsenwinkel en een supermarkt
+                Daar had hij meer connecties met bedrijfsleden gekregen , zelfs met de eigenaar met bol.com.
+                Ze waren goeie vrienden geworden en de eigenaar van bol.com was een inspiratie van Yassin geworden.
+            </p>
+
+        </section>
+    </div>
 </body>
 </html>
