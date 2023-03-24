@@ -13,6 +13,7 @@
     align-items: center;
     color: #0000a4;
     margin: 8vh;
+    flex-direction: column;
 
 }
 #klacht-form{
@@ -27,6 +28,10 @@
 }
 #naam-input{
     margin-bottom: 40px;
+}
+#klacht-message{
+    margin-top: 2vh;
+    font-weight: bold;
 }
 
 /* retour style */

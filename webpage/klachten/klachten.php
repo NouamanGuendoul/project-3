@@ -6,33 +6,29 @@
     include "../navbar/menu.html";
     include "./connectpdo.php";
     
-    try{
+    $message = "";
+    
+    try {
         $stmt = $conn->prepare("INSERT INTO klachten (naam, bericht, datum)
         VALUES (:naam, :klacht, :datum)");
         $stmt->bindParam('naam',$naam);
         $stmt->bindParam('klacht',$bericht);
         $stmt->bindParam('datum',$datum);
 
-        if(isset($_REQUEST['naam'])){
-
+        if(isset($_REQUEST['naam'])) {
             $naam = $_POST['naam'];
             $bericht = $_POST['klacht'];
             $datum = Date('d-m-Y');
             $stmt->execute();
 
-        header('Location: klachten.php');
-        
-
-        }}
-
-    catch(PDOException $e){
+            $message = "Uw klacht is verstuurd!";
+        }
+    }
+    catch(PDOException $e) {
         echo "Error!: " . $e->getMessage();
     }
-    // $sqlSelect = "SELECT * FROM klachten";
-    // $data = $conn->query($sqlSelect);
-
+    
     $conn = null;
-
 ?>
 
 
@@ -40,12 +36,15 @@
 <div id="klachten-retour">
     
     <div id="klacht-container">
-    <form method="post" action="" id="klacht-form">
-        Naam: <br><input type="text" name="naam" id="naam-input" required></input><br><br>
-        Bericht: <br><textarea type="text" name="klacht" id="klacht-input" required></textarea><br><br>
-        <input type="submit" name="btn" id="btn">
-    </form>
+        <form method="post" action="" id="klacht-form">
+            Naam: <br><input type="text" name="naam" id="naam-input" required></input><br><br>
+            Bericht: <br><textarea type="text" name="klacht" id="klacht-input" required></textarea><br><br>
+            <input type="submit" name="btn" id="btn">
+
+            <div id="klacht-message"><?php echo $message; ?></div>
+        </form>
     </div>
+
 
 
     <!-- Retourtermijn -->
