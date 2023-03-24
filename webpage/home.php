@@ -1,4 +1,7 @@
 <link rel="stylesheet" href="./navbar/menu.css?v=<?php echo time(); ?>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 
 <body>
     <!-- navbar -->
