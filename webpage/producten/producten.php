@@ -41,7 +41,7 @@ include "../navbar/menu.html";
     }
     
     echo"</div> ";
-    echo" <div class='product2'> ";
+    echo" <div class='leveranciers'> ";
     try {
  
 
