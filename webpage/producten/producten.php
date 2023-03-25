@@ -41,7 +41,11 @@ include "../navbar/menu.html";
     }
     
     echo"</div> ";
+<<<<<<< HEAD
     echo" <div id='product2'> ";
+=======
+    echo" <div class='leveranciers'> ";
+>>>>>>> add46722f8ad8414d06135723b5a5dd015b198f5
     try {
  
 
