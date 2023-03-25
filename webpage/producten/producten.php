@@ -9,15 +9,15 @@ include "../navbar/menu.html";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./producten.css">
+    <link rel="stylesheet" href="./producten.php?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
 </head>
 <body>
     
   <h1 class="pro1"> Alle product</h1>
     <?php
-    
-    echo" <div class='product1'> ";
+    echo "<div id='producten'>";
+    echo" <div id='product1'> ";
     try {
  
 
@@ -41,7 +41,7 @@ include "../navbar/menu.html";
     }
     
     echo"</div> ";
-    echo" <div class='product2'> ";
+    echo" <div id='product2'> ";
     try {
  
 
@@ -65,6 +65,7 @@ include "../navbar/menu.html";
         //die("Error!: " . $e->message());
     }
     echo"</div> <br>";
+    echo "</div>";
     ?>
 
 
