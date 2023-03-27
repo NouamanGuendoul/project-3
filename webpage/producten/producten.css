@@ -1,19 +1,24 @@
 #product1{
-    /* width: 200px;
+    width: 200px;
     position: absolute;
-    color: aqua;
-    background-color: green; */
+    background-color: #b4e8e8;
+    padding: 2vh 0.5vw;
+    text-align: center;
+    margin-left: 3vw;
+    border: #83a9a9 solid 5px;
 }
-<<<<<<< HEAD
 #product2{
-    /* width: 200px;
-=======
-.leveranciers{
+    width: 200px;
+}
+#leveranciers{
     width: 220px;
->>>>>>> add46722f8ad8414d06135723b5a5dd015b198f5
     position: relative;
-
     left: 400px;
-    color: aqua;
-    background-color: blue; */
+    background-color: #d1e4b7;
+    padding: 2vh 0.5vw;
+    text-align: center;
+    border: #919e7f solid 5px;
+}
+.title-text{
+    margin-bottom: 10px;
 }

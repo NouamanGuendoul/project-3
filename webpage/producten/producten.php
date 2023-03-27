@@ -9,12 +9,12 @@ include "../navbar/menu.html";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./producten.php?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./producten.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
 </head>
 <body>
     
-  <h1 class="pro1"> Alle product</h1>
+  <h1 class="pro1"> Producten</h1>
     <?php
     echo "<div id='producten'>";
     echo" <div id='product1'> ";
@@ -25,7 +25,9 @@ include "../navbar/menu.html";
         $query = $db->prepare("SELECT * FROM product ");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
-        echo"producten";
+        echo "<div class='title-text'>";
+        echo"Producten";
+        echo "</div>";
         echo '<table border="1" width="200px" height= "50px">' ;
         
         foreach ($result as $data) {
@@ -41,11 +43,9 @@ include "../navbar/menu.html";
     }
     
     echo"</div> ";
-<<<<<<< HEAD
     echo" <div id='product2'> ";
-=======
-    echo" <div class='leveranciers'> ";
->>>>>>> add46722f8ad8414d06135723b5a5dd015b198f5
+    echo" <div id='leveranciers'> ";
+
     try {
  
 
@@ -53,7 +53,9 @@ include "../navbar/menu.html";
         $query = $db->prepare("SELECT * FROM leveranciers");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
-        echo"leveranciers";
+        echo "<div class='title-text'>";
+        echo "Leveranciers";
+        echo "</div>";
         echo '<table border="1" width="200px" height= "50px">
         ' ;
         
