@@ -1,0 +1,22 @@
+.comgregor{
+    display: flex;
+    justify-content: center;
+}
+
+
+.ecogregor{
+  width: 500px;
+  padding: 4.5vh 2vw;
+  border: #6b99bf 5px solid;
+  background-color: #90ccfe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eco-vriendelijkheidgregor{
+  display: flex;
+  justify-content: center;
+  margin-top: 13vh;
+}
