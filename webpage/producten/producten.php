@@ -21,7 +21,7 @@ include "../navbar/menu.html";
     try {
  
 
-        $db = new PDO("mysql:host=localhost;dbname=producten", "root", "");
+        $db = new PDO("mysql:host=localhost;dbname=dol.com", "root", "");
         $query = $db->prepare("SELECT * FROM product ");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -49,7 +49,7 @@ include "../navbar/menu.html";
     try {
  
 
-        $db = new PDO("mysql:host=localhost;dbname=producten", "root", "");
+        $db = new PDO("mysql:host=localhost;dbname=dol.com", "root", "");
         $query = $db->prepare("SELECT * FROM leveranciers");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
