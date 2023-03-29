@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="./geschiedenis.css?v=<?php echo time(); ?>">
-</head>
+    <link rel="stylesheet" href="../main.css?v=<?php echo time(); ?>"></head>
 <body>
     
     <div class="Geschiedenisnouaman">

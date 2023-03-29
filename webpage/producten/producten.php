@@ -3,7 +3,7 @@ include "../navbar/menu.html";
 include "./connectpdo.php";
 ?>
 
-<link rel="stylesheet" href="./producten.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../main.css?v=<?php echo time(); ?>">
 <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
 
 

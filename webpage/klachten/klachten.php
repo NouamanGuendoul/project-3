@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
-<link rel="stylesheet" href="./klachten.css?v=<?php echo time(); ?>">
-
+<link rel="stylesheet" href="../main.css?v=<?php echo time(); ?>">
 
 <?php
     include "../navbar/menu.html";
