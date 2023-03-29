@@ -2,20 +2,13 @@
 include "../navbar/menu.html";
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./producten.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
-</head>
-<body>
-    
-  <h1 class="pro1"> Producten</h1>
+<link rel="stylesheet" href="./producten.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
+
+
+<h1 class="pro1"> Producten</h1>
     <?php
+
     echo "<div id='producten'>";
     echo" <div id='product1'> ";
     try {
@@ -38,7 +31,8 @@ include "../navbar/menu.html";
            
         }
         echo "</td> </tr>  </table>";
-    }  catch(PDOException $e)  {
+    }  
+    catch(PDOException $e)  {
         //die("Error!: " . $e->message());
     }
     
@@ -73,15 +67,6 @@ include "../navbar/menu.html";
     echo"</div> <br>";
     echo "</div>";
     ?>
-
-
-
-
-
-
-    
-</body>
-</html>
 
 
 
