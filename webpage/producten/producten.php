@@ -16,7 +16,7 @@ include "./connectpdo.php";
  
 
         $db = $conn;
-        $query = $db->prepare("SELECT * FROM product ");
+        $query = $db->prepare("SELECT * FROM product  ");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
         echo "<div class='title-text'>";
@@ -26,8 +26,8 @@ include "./connectpdo.php";
         
         foreach ($result as $data) {
             echo " <tr> <td>  ";
-            echo" cijfer :   " . $data['productnaam'] . "<br>";
-            echo " naam: " . $data['prijs'] . "";
+            echo" Product:   " . $data['productnaam'] . "<br>";
+            echo " Prijs: " . $data['prijs'] . "";
           
            
         }
@@ -56,8 +56,8 @@ include "./connectpdo.php";
         
         foreach ($result as $data) {
             echo " <tr> <td>  ";
-            echo" adresgegevensleveranciers : ". $data['adresgegevensleveranciers'] . "<br>";
-            echo " volgnummer : " . $data['volgnummer'] . "";
+            echo" Adres: ". $data['adresgegevensleveranciers'] . "<br>";
+            echo " Nummer: " . $data['volgnummer'] . "";
           
            
         }

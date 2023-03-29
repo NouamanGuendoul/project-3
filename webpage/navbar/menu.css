@@ -7,9 +7,6 @@ html{
     position: relative;
     min-height: 100%;
 }
-body{
-   margin-bottom: 8vh;
-}
 .nav-li{
     list-style-type: none;
     margin: 20px;

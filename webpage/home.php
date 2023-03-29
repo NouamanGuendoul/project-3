@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="./navbar/menu.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="./main.css?v=<?php echo time(); ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
@@ -12,7 +13,7 @@
             <li class="nav-li"><a href="./login/login.php"><img src="./img/login.png" alt="login" id="login-img"></a></li>
         </ul>
     </nav>
-    <img src="./img/DOL.COM.png" alt="dol.com" height="700px" width="700px">
+    <img src="./img/DOL.COM.png" alt="dol.com" id="home-img">
 
     <!-- footer -->
     <footer id="footerbalk">
