@@ -1,5 +1,6 @@
 <?php
 include "../navbar/menu.html";
+include "./connectpdo.php";
 ?>
 
 <link rel="stylesheet" href="./producten.css?v=<?php echo time(); ?>">
@@ -14,7 +15,7 @@ include "../navbar/menu.html";
     try {
  
 
-        $db = new PDO("mysql:host=localhost;dbname=dol.com", "root", "");
+        $db = $conn;
         $query = $db->prepare("SELECT * FROM product ");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -43,7 +44,7 @@ include "../navbar/menu.html";
     try {
  
 
-        $db = new PDO("mysql:host=localhost;dbname=dol.com", "root", "");
+        $db = $conn;
         $query = $db->prepare("SELECT * FROM leveranciers");
         $query->execute();
         $result = $query->fetchAll(PDO::FETCH_ASSOC);
