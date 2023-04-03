@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="../navbar/menu.css?v=<?php echo time(); ?>">
+<link rel="stylesheet" href="../main.css?v=<?php echo time(); ?>">
 
 <?php
 include "../navbar/menu.html";
@@ -19,12 +20,15 @@ try {
 
 
 ?>
+<div id=Login>
+  <div  id= login-form>
+    <form action="gebruiker.php" method="POST">
+      <label for="fname">naam:</label>
+      <input type="text" id="Naam" name="Naam" ><br><br>
+      <label for="lname">wachtwoord:</label>
+      <input type="password" id="Wachtwoord" name="Wachtwoord"><br><br>
 
-<form action="gebruiker.php" method="POST">
-  <label for="fname">naam:</label>
-  <input type="text" id="Naam" name="Naam" ><br><br>
-  <label for="lname">wachtwoord:</label>
-  <input type="text" id="Wachtwoord" name="Wachtwoord"><br><br>
-
-  <input type="submit" value="verzenden">
-</form>
+      <input class= "verzend-knop" type="submit" value="verzenden">
+    </form>
+  </div>
+</div>

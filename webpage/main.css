@@ -183,3 +183,27 @@ body{
   justify-content: center;
   margin-top: 13vh;
 }
+
+/* Login CSS */
+#Login{
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #90ccfe;
+    width: 20vw;
+    height: 40vh;
+    border: #6585b8 5px solid;
+}
+
+.verzend-knop{
+    margin-top: 3vh;
+    margin-left: 12vh;
+}
