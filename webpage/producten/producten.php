@@ -56,18 +56,57 @@ include "./connectpdo.php";
         
         foreach ($result as $data) {
             echo " <tr> <td>  ";
+            echo" Naam: ". $data['naamleveranciers'] . "<br>";
             echo" Adres: ". $data['adresgegevensleveranciers'] . "<br>";
             echo " Nummer: " . $data['volgnummer'] . "";
           
            
         }
         echo "</td> </tr>  </table>";
+      
     }  catch(PDOException $e)  {
         //die("Error!: " . $e->message());
     }
-    echo"</div> <br>";
+ 
     echo "</div>";
+
+    
+
+  // Check if the form has been submitted
+if (isset($_POST['submit'])) {
+    // Retrieve the value of the input field with name "id"
+    $id = $_POST['id'];
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT volgnummer, naamleveranciers, adresgegevensleveranciers FROM leveranciers WHERE volgnummer='$id'";
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        // output data of each row
+        while ($row = $result->fetch_assoc()) {
+            echo "volgnummer: " . $row["volgnummer"] . "<br>" .
+                "Name: " . $row["naamleveranciers"] . "<br>" .
+                $row["adresgegevensleveranciers"] . "<br>";
+        }
+    } else {
+        echo "0 results";
+    }
+
+    $conn->close();
+}
+
     ?>
 
 
+<form method="post">
+    <label for="id">voer volgnummer:</label>
+    <input type="text" name="id" id="id">
+    <button type="submit" name="submit">Submit</button>
+</form>
 
