@@ -36,9 +36,11 @@ include "./connectpdo.php";
     catch(PDOException $e)  {
         //die("Error!: " . $e->message());
     }
-    
     echo"</div> ";
-    echo" <div id='product2'> ";
+
+    echo"</div> ";
+
+ 
     echo" <div id='leveranciers'> ";
 
     try {
@@ -72,14 +74,14 @@ include "./connectpdo.php";
 
     
 
-  // Check if the form has been submitted
+    echo" <div class='Filter-leveranciers'> ";
 if (isset($_POST['submit'])) {
-    // Retrieve the value of the input field with name "id"
+
     $id = $_POST['id'];
 
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check connection
+
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -100,13 +102,17 @@ if (isset($_POST['submit'])) {
 
     $conn->close();
 }
+echo "</div>";
 
     ?>
 
-
-<form method="post">
-    <label for="id">voer volgnummer:</label>
-    <input type="text" name="id" id="id">
-    <button type="submit" name="submit">Submit</button>
-</form>
+<div id="Form-Filter-leveranciers">
+   
+        <form method="post">
+            <label for="id">voer volgnummer:</label> <br>
+            <input type="text" name="id" id="id">
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    
+</div>
 
