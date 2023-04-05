@@ -1,5 +1,7 @@
 body{
     background-color: #ffffff;
+    overflow: hidden;
+
 }
 
 /* Home CSS */
@@ -207,3 +209,26 @@ body{
     margin-top: 3vh;
     margin-left: 12vh;
 }
+
+/*filters*/
+.Filter-leveranciers{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;  
+    top: 38%;
+    right:15% ;
+    transform: translateY(-50%);
+  
+  }
+  
+  
+
+#Form-Filter-leveranciers{
+    display: flex;
+    justify-content: center;
+    margin-left: 5vh;
+    position: relative;
+    bottom: 50vh;
+  
+    }
