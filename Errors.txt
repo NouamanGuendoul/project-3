@@ -8,3 +8,9 @@ When opening webpage map in apache local host, it does not load the home page.
 When clicking on "verzenden" (klachten.php), it gives an error "The requested URL was not found on this server.".
 
 When being on any other page, going to klachten.php gives an error "The requested URL was not found on this server.".
+
+
+
+Warning: Undefined array key "id" in C:\xamppp\htdocs\pro3- sprint4\project-3\webpage\producten\producten.php on line 109
+
+Fatal error: Uncaught mysqli_sql_exception: Unknown column 'volgnummer' in 'where clause' in C:\xamppp\htdocs\pro3- sprint4\project-3\webpage\producten\producten.php:118 Stack trace:

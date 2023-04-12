@@ -26,7 +26,7 @@ include "./connectpdo.php";
         
         foreach ($result as $data) {
             echo " <tr> <td>  ";
-            echo" Product:   " . $data['productnaam'] . "<br>";
+            echo" Productnaam:   " . $data['productnaam'] . "<br>";
             echo " Prijs: " . $data['prijs'] . "";
           
            
@@ -59,8 +59,8 @@ include "./connectpdo.php";
         foreach ($result as $data) {
             echo " <tr> <td>  ";
             echo" Naam: ". $data['naamleveranciers'] . "<br>";
-            echo" Adres: ". $data['adresgegevensleveranciers'] . "<br>";
             echo " Nummer: " . $data['volgnummer'] . "";
+         
           
            
         }
@@ -74,7 +74,7 @@ include "./connectpdo.php";
 
     
 
-    echo" <div class='Filter-leveranciers'> ";
+    echo" <div class='Filter-leveranciers '> ";
 if (isset($_POST['submit'])) {
 
     $id = $_POST['id'];
@@ -86,7 +86,7 @@ if (isset($_POST['submit'])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT volgnummer, naamleveranciers, adresgegevensleveranciers FROM leveranciers WHERE volgnummer='$id'";
+    $sql = "SELECT volgnummer, naamleveranciers,  adresgegevensleveranciers FROM leveranciers WHERE volgnummer='$id'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -104,15 +104,43 @@ if (isset($_POST['submit'])) {
 }
 echo "</div>";
 
-    ?>
+
+echo "<div class='Filter-producten'>";
+$id = $_POST['id'];
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT ProductID, productnaam, prijs FROM product WHERE ProductID='$id'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while ($row = $result->fetch_assoc()) {
+        echo "prijs: " .  $row["prijs"] . "<br>" .
+            "productnaam: " . $row["productnaam"] . "<br>" ;
+           ;
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+echo "</div>";
+?>
 
 <div id="Form-Filter-leveranciers">
-   
-        <form method="post">
-            <label for="id">voer volgnummer:</label> <br>
-            <input type="text" name="id" id="id">
-            <button type="submit" name="submit">Submit</button>
-        </form>
-    
-</div>
+    <form method="POST">
+        <label for="id">voer volgnummer:</label><br>
+        <input type="text" name="id" id="id">
+        <button type="submit" name="submit">Submit</button><br>
+    </form>
 
+    <form methode=POST>
+  
+    </form>
+</div>
