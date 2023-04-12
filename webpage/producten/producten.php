@@ -106,6 +106,7 @@ echo "</div>";
 
 
 echo "<div class='Filter-producten'>";
+if (isset($_POST['submit'])) {
 $id = $_POST['id'];
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -128,8 +129,9 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+}
 
-$conn->close();
+
 echo "</div>";
 ?>
 
